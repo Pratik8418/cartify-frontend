@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import Container from "../components/Container";
 import BlogCard from "../components/BlogCard";
+import ProductCard from "../components/productCard"
 
 //images
 import mainBanner1 from "../images/main-banner-1.jpg"
@@ -31,7 +32,7 @@ import brand1 from "../images/brand1.png"
 const Home = () => {
   return (
     <>
-      <Container class1="home-wrapper-1 py-5">
+      <Container class1="home-wrapper-1 py-3">
         <div className="row">
           <div className="col-6 carousel slide" data-bs-ride="carousel" id="carouselExampleControls">
           <div className="carousel-inner">
@@ -156,7 +157,7 @@ const Home = () => {
         </div>
       </Container> */}
 
-      <section className="home-wrapper-2 py-5">
+      <section className="home-wrapper-2 py-3">
         <div className="cotainer-xxl">
           <div className="row">
             <div className="col-12">
@@ -202,7 +203,7 @@ const Home = () => {
         </div>
       </section>
 
-      <Container class1="home-wrapper-2 py-5">
+      <Container class1="home-wrapper-2 py-3">
         <div className="row">
           <div className="col-12">
             <div className="categories d-flex justify-content-between flex-wrap align-items-center">
@@ -267,7 +268,7 @@ const Home = () => {
         </div>
       </Container>
 
-      <Container class1="marque-wrapper home-wrapper-2 py-5">
+      <Container class1="marque-wrapper home-wrapper-2 py-3">
         <div className="row">
           <div className="col-12">
             <div className="marquee-inner-wrapper card-wrapper">
@@ -302,7 +303,29 @@ const Home = () => {
         </div>
       </Container>
       
-      <Container class1="blog-wrapper py-5 home-wrapper-2">
+      <Container class1="blog-wrapper py-3 home-wrapper-2">
+        <div className="row">
+          <div className="col-12">
+            <h3 className="section-heading">Our Latest Blogs</h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-3">
+            <ProductCard />
+          </div>
+          <div className="col-3">
+            <ProductCard />
+          </div>
+          <div className="col-3">
+            <ProductCard />
+          </div>
+          <div className="col-3">
+            <ProductCard />
+          </div>
+        </div>
+      </Container>
+
+      <Container class1="blog-wrapper py-3 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <h3 className="section-heading">Our Latest Blogs</h3>
