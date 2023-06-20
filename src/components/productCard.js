@@ -4,16 +4,24 @@ import { Link } from 'react-router-dom'
 
 //images
 import product1 from "../images/watch.jpg"
+import product2 from "../images/watch.jpg"
 import productCompare from "../images/prodcompare.svg"
 import view from "../images/view.svg"
 import addCart from "../images/add-cart.svg"
+import wish from "../images/wish.svg"
 
 function productCard() {
   return (
     <div className='col-3'>
       <div className='product-card position-relative'>
+        <div className='wishlist-icon position-absolute'>
+          <Link>
+              <img src={wish} alt='wishlist'/>
+          </Link>
+        </div>
         <div className='product-image'>
            <img src={product1} alt="product image" />
+           <img src={product2} alt="product image" />
         </div>
         <div className='product-details'>
           <h6 className='brand'> Havels </h6>
