@@ -14,6 +14,13 @@ import SignUp from './pages/SignUp';
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout';
 import SingleBlog from './pages/SingleBlog';
+import ForgotPassword from './pages/forgetPassword';
+import Resetpassword from './pages/ResetPassword'
+import PrivacyPolicy from './pages/PrivacyPolicy'
+import RefundPloicy from './pages/RefundPolicy'
+import ShippingPolicy from './pages/ShippingPolicy'
+import TermAndContions from './pages/TermAndConditions'
+import SingleProduct from './pages/SingleProduct';
 
 function App() {
   return (
@@ -33,7 +40,13 @@ function App() {
            <Route path='/cart' element={<Cart/>}/>  
            <Route path='/checkout' element={<Checkout/>}/>  
            <Route path='/single-blog' element={<SingleBlog/>}/>  
-           <Route path='/forgot-password' element={<SingleBlog/>}/>  
+           <Route path='/forgot-password' element={<ForgotPassword/>}/>  
+           <Route path="reset-password" element={<Resetpassword />} />
+           <Route path="privacy-policy" element={<PrivacyPolicy />} />
+           <Route path="refund-policy" element={<RefundPloicy />} />
+           <Route path="shipping-policy" element={<ShippingPolicy />} />
+           <Route path="term-conditions" element={<TermAndContions />} />
+           <Route path="single-product" element={<SingleProduct />} />
         </Route>
       </Routes>
     </BrowserRouter>
