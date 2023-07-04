@@ -166,14 +166,16 @@ const SingleProduct = () => {
                 </div>
                 <div className="d-flex align-items-center gap-15">
                   <div>
-                    <a href="">
-                      <TbGitCompare className="fs-5 me-2" /> Add to Compare
-                    </a>
+                    <Link to="/compare-product">
+                      <TbGitCompare className="fs-5 me-2" /> 
+                      Add to Compare
+                    </Link>
                   </div>
                   <div>
-                    <a href="">
-                      <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
-                    </a>
+                    <Link to="/wishlist">
+                      <TbGitCompare className="fs-5 me-2" /> 
+                      Add to Wishlist
+                    </Link>
                   </div>
                 </div>
                 <div className="d-flex gap-10 flex-column  my-3">
@@ -350,7 +352,7 @@ const SingleProduct = () => {
             <div className="d-flex justify-content-center py-3">
               <Link
                 className="text-dark"
-                to="/product"
+                to="/ourstore"
                 onClick={() => {
                   closeModal();
                 }}
